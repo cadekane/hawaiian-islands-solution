@@ -1,14 +1,24 @@
 # Characteristics of the Hawaiian Islands
 
 ## Objective
+The objective of this activity is to familiarize learners with JavaScript objects and arrays by tasking them to define objects representing the Hawaiian Islands, organize these objects into an array, display their attributes dynamically in an HTML structure, and practice adding/editing attributes within the array.
 
 ## Difficulty
+Intermediate
 
 ## Prerequisites
 - Understanding of Javascript objects
 - Understanding of Javascript arrays
 
 ## Concepts
+- JavaScript Objects: Understanding the structure of objects, defining properties, and manipulating object attributes.
+- JavaScript Arrays: Organizing multiple objects into an array, accessing array elements, and performing operations on array items.
+- DOM Manipulation: Using JavaScript to dynamically create HTML elements, modify their content, and display structured information within a web page.
+- Dot Notation and Bracket Notation: Accessing object properties using dot notation (object.property) and bracket notation (object['property']).
+- Conditional Statements: Employing conditional statements to validate the existence of an object before adding/editing its attributes.
+- Iterating Arrays: Using array methods like forEach or find to iterate through arrays and perform operations on their elements.
+
+This activity aims to engage learners in JavaScript object manipulation, array organization, and dynamic HTML rendering while introducing them to fundamental concepts like object structure, array operations, and DOM manipulation techniques.
 
 ## Part I: Define Objects
 
@@ -98,4 +108,4 @@ if (islandToEdit) {
 
 ```
 
-## Part IV: 
+## Part IV: Stretch Goals
