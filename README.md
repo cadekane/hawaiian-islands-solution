@@ -79,9 +79,9 @@ Suppose we want to add an `attraction` property to the island of "Maui" with a v
 - Recall that in JavaScript, indices begin at 0. Therefore, our first island is at index 0, our second island at index 1, etc.
 
 ```javascript
-myIsland = islands[5]
-myIslandName = myIsland.name
-print(myIslandName)
+myIsland = islands[5];
+myIslandName = myIsland.name;
+print(myIslandName);
 ```
 Assuming you added the island objects to the array in the order specified above, this will print "Oʻahu," which is the sixth island.
 
@@ -119,10 +119,10 @@ Congratualations! You've completed this activity. I hope you learned something n
 
 **Example:**
 ```javascript
-original = …
-reference = original
-change(reference)
-showData(original, reference)
+original = …;
+reference = original;
+change(reference);
+showData(original, reference);
 ```
 
 Given one object, we set another variable to point to that object. When we change that second variable, we'll see that it also changes the first. This is because both original and reference are simply pointing to the same data. This is the same as storing our found object in a temporary variable.
