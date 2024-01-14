@@ -48,8 +48,10 @@ The last two may include…
 - population
 - official legislated color
 - nicknames or alternative names
+- cultural significance
+- famous landmarks or places
 
-But can encompass any attribute that can be described within the object. A property of an object can be any data type. Get creative!
+But can encompass any attribute that can be described within the object! Although it is actually possible, please do not try to include URLs to images, as they will not be successfully visualized with the code written for this challenge.
 
 ## Part II: Store Islands in an Array
 
@@ -73,7 +75,7 @@ To add a new attribute to one of the islands in our array, you can use the follo
 2. Use dot notation or bracket notation to add a new property to the chosen island object.
 
 **Example:**
-Suppose we want to add an `attraction` property to the island of "Maui" with a value of "Haleakalā National Park" (a string).
+Suppose we want to add an `attraction` property to the island of Maui with a value of "Haleakalā National Park".
 
 - We first must access the island object. Because we know in what order we added each island, we can access them with their __index__.
 - Recall that in JavaScript, indices begin at 0. Therefore, our first island is at index 0, our second island at index 1, etc.
@@ -107,7 +109,7 @@ This method, called on an array, takes **another** function as an argument. This
 Suppose we want to set the population of Oʻahu to 1000000.
 
 - Write a function that returns a boolean value (True or False) when given an island object. It will return true if the name property of the object is "Oʻahu," and false otherwise.
-- Call the find function on your islands array, and use the name of your boolean function as its argument. Store this in a temporary variable.
+- Call the find function on your `islands` array, and use the name of your boolean function as its argument. Store this in a temporary variable.
 - You can now edit Oʻahu's properties using that temporary variable. Set "population" to 1000000.
 
 Congratualations! You've completed this activity. I hope you learned something new about arrays, objects, and of course, Hawaiʻi's beautiful islands.

@@ -103,10 +103,7 @@ const islandToModify = islands.find(isMaui);
 
 // Check if the island is found before adding the attribute
 if (islandToModify) {
-  islandToModify.attraction = "Haleakalā National Park";
-  console.log("Attribute 'attraction' added to Maui:", islandToModify);
-} else {
-  console.log("Island 'Maui' not found in the array.");
+    islandToModify.attraction = "Haleakalā National Park";
 }
 
 /* Code to visualize your array of island objects. Do not edit */
