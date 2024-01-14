@@ -1,4 +1,4 @@
-# Characteristics of the Hawaiian Islands
+# Features of the Hawaiian Islands
 
 ## Objective
 The objective of this activity is to familiarize learners with JavaScript objects and arrays by tasking them to define objects representing the Hawaiian Islands, organize these objects into an array, display their attributes dynamically in an HTML structure, and practice adding/editing attributes within the array.
@@ -42,11 +42,13 @@ const obj = {
 };
 ```
 
-For each island, define at least **two** properties. These may include…
+For each island, define at least **three** properties. The first property should be the name of the island.
+
+The last two may include…
 - population
 - official legislated color
 - nicknames or alternative names
-But can encompass any attribute that can be described within the object.
+But can encompass any attribute that can be described within the object. A property of an object can be any data type. Get creative!
 
 // Example usage: Display information for each island
 islands.forEach((island) => displayIslandInfo(island));
@@ -57,7 +59,9 @@ Now that we have defined objects for each Hawaiian Island, let's organize them i
 
 ### Visualize your array in HTML
 
-At this point, we want to display the characteristics of our island objects. Run the HTML to see the results. 
+At this point, we want to display the characteristics of our island objects. Run the HTML file to see the results.
+
+The HTML file draws from the JavaScript script.js file you've been working on. Specifically, read the pre-written code to visualize your island information and see if you can trace how it works.
 
 ## Part III: Add and Edit an Attribute
 
@@ -71,41 +75,56 @@ To add a new attribute to one of the islands in our array, you can use the follo
 2. Use dot notation or bracket notation to add a new property to the chosen island object.
 
 Example:
-Suppose we want to add an `attraction` property to the island of "Maui" with a value of "Haleakalā National Park".
+Suppose we want to add an `attraction` property to the island of "Maui" with a value of "Haleakalā National Park" (a string).
+
+- We first must access the island object. Because we know in what order we added each island, we can access them with their __index__.
+- Recall that in JavaScript, indices begin at 0. Therefore, our first island is at index 0, our second island at index 1, etc.
 
 ```javascript
-// Find the index of the island object you want to modify
-const islandToModify = islands.find((island) => island.name === "Maui");
-
-// Check if the island is found before adding the attribute
-if (islandToModify) {
-  islandToModify.attraction = "Haleakalā National Park";
-  console.log("Attribute 'attraction' added to Maui:", islandToModify);
-} else {
-  console.log("Island 'Maui' not found in the array.");
-}
-
+myIsland = islands[5]
+myIslandName = myIsland.name
+print(myIslandName)
 ```
+Assuming you added the island objects to the array in the order specified above, this will print "Oʻahu," which is the sixth island.
+
+- You can then add your attribute by using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors">dot or bracket notation</a>.
 
 ### Edit an Attribute
 
-To edit an existing attribute for a specific island, you can simply reassign a new value to that attribute.
+To edit an existing attribute for a specific island, you can simply reassign a new value to that attribute. This is the exact same procedure as adding an attribute, except the property you're working with already exists in the object.
 
-Example:
-Let's change the population of the island of "Oʻahu" to 1,000,000.
-
-```javascript
-// Find the index of the island object you want to modify
-const islandToEdit = islands.find((island) => island.name === "Oʻahu");
-
-// Check if the island is found before editing the attribute
-if (islandToEdit) {
-  islandToEdit.population = 1000000;
-  console.log("Population of Oʻahu updated:", islandToEdit);
-} else {
-  console.log("Island 'Oʻahu' not found in the array.");
-}
-
-```
+Edit any attribute of any island you'd like, and see the change manifest in your HTML!
 
 ## Part IV: Stretch Goals
+
+### Add/edit an attribute using the find() method
+
+Previously, we accessed islands using their respective index. However, we will often not know the index of an array element we want to access and manipulate. How, then, could we locate it in our array?
+
+We can use JavaScript's <a href="https://www.w3schools.com/jsref/jsref_find.asp"> array.find() method </a>.
+
+This method, called on an array, takes **another** function as an argument. This second function will provide a set of instructions or rules for the find() function to follow. The find() function will return the first element of the array that passes these rules.
+
+#### Example:
+Suppose we want to set the population of Oʻahu to 1000000.
+
+- Write a function that returns a boolean value (True or False) when given an island object. It will return true if the name property of the object is "Oʻahu," and false otherwise.
+- Call the find function on your islands array, and use the name of your boolean function as its argument. Store this in a temporary variable.
+- You can now edit Oʻahu's properties using that temporary variable. Set "population" to 1000000.
+
+Congratualations! You've completed this activity. I hope you learned something new about arrays, objects, and of course, Hawaiʻi's beautiful islands.
+
+## Notes
+- One of the great features of JavaScript is that you can pass functions as arguments to other functions. Not all languages are capable of this!
+
+- The reason we can manipulate objects and arrays so freely is because they are passed by reference. This means when you "store" an object or array in a variable, that variable doesn't actually contain the contents of the data structure. Instead, it points to a place in the computer's memory where the data is actually stored.
+
+Example:
+```javascript
+original = …
+reference = original
+change(reference)
+showData(original, reference)
+```
+
+Given one object, we set another variable to point to that object. When we change that second variable, we'll see that it also changes the first. This is because both original and reference are simply pointing to the same data. This is the same as storing our found object in a temporary variable.
