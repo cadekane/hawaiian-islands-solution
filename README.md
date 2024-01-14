@@ -48,6 +48,7 @@ The last two may include…
 - population
 - official legislated color
 - nicknames or alternative names
+
 But can encompass any attribute that can be described within the object. A property of an object can be any data type. Get creative!
 
 ## Part II: Store Islands in an Array
