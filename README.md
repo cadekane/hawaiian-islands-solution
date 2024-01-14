@@ -50,9 +50,6 @@ The last two may include…
 - nicknames or alternative names
 But can encompass any attribute that can be described within the object. A property of an object can be any data type. Get creative!
 
-// Example usage: Display information for each island
-islands.forEach((island) => displayIslandInfo(island));
-
 ## Part II: Store Islands in an Array
 
 Now that we have defined objects for each Hawaiian Island, let's organize them into an array. Create an array named islands and add each island object to it. Because we have already defined each island, we will just create the array and push each of our island objects into it.
@@ -74,7 +71,7 @@ To add a new attribute to one of the islands in our array, you can use the follo
 1. Choose the island you want to modify in the `islands` array.
 2. Use dot notation or bracket notation to add a new property to the chosen island object.
 
-Example:
+**Example:**
 Suppose we want to add an `attraction` property to the island of "Maui" with a value of "Haleakalā National Park" (a string).
 
 - We first must access the island object. Because we know in what order we added each island, we can access them with their __index__.
@@ -105,7 +102,7 @@ We can use JavaScript's <a href="https://www.w3schools.com/jsref/jsref_find.asp"
 
 This method, called on an array, takes **another** function as an argument. This second function will provide a set of instructions or rules for the find() function to follow. The find() function will return the first element of the array that passes these rules.
 
-#### Example:
+**Example:**
 Suppose we want to set the population of Oʻahu to 1000000.
 
 - Write a function that returns a boolean value (True or False) when given an island object. It will return true if the name property of the object is "Oʻahu," and false otherwise.
@@ -117,9 +114,9 @@ Congratualations! You've completed this activity. I hope you learned something n
 ## Notes
 - One of the great features of JavaScript is that you can pass functions as arguments to other functions. Not all languages are capable of this!
 
-- The reason we can manipulate objects and arrays so freely is because they are passed by reference. This means when you "store" an object or array in a variable, that variable doesn't actually contain the contents of the data structure. Instead, it points to a place in the computer's memory where the data is actually stored.
+- The reason we can manipulate objects and arrays so freely is because they are <a href="https://flexiple.com/javascript/javascript-pass-by-reference-or-value#section2">passed by reference</a>. This means when you "store" an object or array in a variable, that variable doesn't actually contain the contents of the data structure. Instead, it points to a place in the computer's memory where the data is actually stored.
 
-Example:
+**Example:**
 ```javascript
 original = …
 reference = original
