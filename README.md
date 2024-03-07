@@ -55,7 +55,7 @@ But can encompass any attribute that can be described within the object! Althoug
 
 ## Part II: Store Islands in an Array
 
-Now that we have defined objects for each Hawaiian Island, let's organize them into an array. Create an array named islands and add each island object to it. Because we have already defined each island, we will just create the array and push each of our island objects into it.
+Now that we have defined objects for each Hawaiian Island, let's organize them into an array. Create an array named `islands` and add each island object to it. Because we have already defined each island, we will just create the array and push each of our island objects into it.
 
 ### Visualize your array in HTML
 
